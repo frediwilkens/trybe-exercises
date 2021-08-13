@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+AWS
+React
+Redux
+JavaScript
+Python
