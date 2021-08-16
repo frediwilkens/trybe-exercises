@@ -4,5 +4,8 @@ O que eu vou aprender na Trybe:
 - Bash
 - Git
 - HTML
-- CSSAprender a trabalhar
-aprender a aprender
+- CSS
+- Aprender a trabalhar
+- Aprender a aprender
+- JavaScript
+- Python
