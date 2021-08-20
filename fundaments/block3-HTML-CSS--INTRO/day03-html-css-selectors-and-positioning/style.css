@@ -1,0 +1,11 @@
+.yellowbackground {
+  background-color: yellow;
+}
+
+.evenitem {
+  color: green;
+}
+
+.odditem {
+  text-transform: uppercase;
+}
