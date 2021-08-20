@@ -34,3 +34,23 @@ li em {
 .bluefont {
 color: blue;
 }
+
+li a:hover {
+  font-weight: bold;
+}
+
+.stackoverflow:hover {
+  color: orange;
+}
+
+.w3andtrybe:hover {
+  color: green;
+}
+
+.mdn:hover {
+  color: black;
+}
+
+.devdocs:hover {
+  color: yellow;
+}
