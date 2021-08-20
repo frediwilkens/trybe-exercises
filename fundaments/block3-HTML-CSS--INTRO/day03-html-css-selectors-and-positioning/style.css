@@ -1,0 +1,13 @@
+h1, p {
+  text-align: center;
+}
+
+ol:hover {
+background-color: forestgreen;
+}
+
+li:active {
+  font-family:monospace;
+}
+
+
