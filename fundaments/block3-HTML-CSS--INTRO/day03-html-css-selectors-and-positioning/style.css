@@ -1,3 +1,23 @@
 div:hover {
   border: solid 2px black;
 }
+
+div:first-of-type{
+  background-color: blue;
+}
+
+div:nth-child(4) {
+  background-color: green;
+}
+
+div:nth-child(5) {
+  background-color: rgb(183, 58, 255)
+}
+
+div:nth-child(6) {
+  background-color: gray;
+}
+
+div:last-of-type{
+  background-color: rgb(245, 189, 189);
+}
