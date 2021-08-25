@@ -34,11 +34,34 @@
 */
 
 /*1*/
-const base = 5;
-let height = 8;
+//const base = 5;
+//let height = 8;
 /*2*/
-const area = base * height;
-console.log(area);
+//const area = base * height;
+//console.log(area);
 /*3*/
-const perimeter = (base * 2) + (height * 2);
-console.log(perimeter);
+//const perimeter = (base * 2) + (height * 2);
+//console.log(perimeter);
+
+
+/* PARTE 3
+1.Crie uma constante que receba a nota de uma pessoa candidata em um desafio técnico, e atribua a ela um valor entre 1 e 100;
+2.Implemente uma lógica que verifique se a pessoa candidata foi aprovada, reprovada ou se ela está na lista de espera. Para isso, considere as seguintes informações:
+Se a nota for maior ou igual a 80, imprima "Parabéns, você foi aprovada(o)!"
+Se a nota for menor que 80 e maior ou igual a 60, imprima "Você está na nossa lista de espera"
+Se a nota for menor que 60, imprima "Você foi reprovada(o)"
+3.Crie uma estrutura condicional utilizando o if , else if e else para criar o seu algoritmo, e os operadores lógicos que se aplicam a cada situação.
+4.Altere o valor da nota para verificar se as condições que você implementou funcionam;*/
+
+/*1 and 4*/
+//const nota = 80;
+//const nota = 55;
+const nota = 60;
+/*2 and 3*/
+if(nota >= 80){
+    console.log("Parabéns, você foi aprovada(o)!")
+} else if (nota < 80 && nota >= 60) {
+    console.log("Você está na nossa lista de espera")
+} else {
+    console.log("Você foi reprovada(o)")
+}
