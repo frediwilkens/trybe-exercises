@@ -56,12 +56,61 @@ Se a nota for menor que 60, imprima "Você foi reprovada(o)"
 /*1 and 4*/
 //const nota = 80;
 //const nota = 55;
-const nota = 60;
+//const nota = 60;
 /*2 and 3*/
-if(nota >= 80){
-    console.log("Parabéns, você foi aprovada(o)!")
-} else if (nota < 80 && nota >= 60) {
-    console.log("Você está na nossa lista de espera")
+//if(nota >= 80){
+//    console.log("Parabéns, você foi aprovada(o)!")
+//} else if (nota < 80 && nota >= 60) {
+//    console.log("Você está na nossa lista de espera")
+//} else {
+//    console.log("Você foi reprovada(o)")
+//}
+
+
+/*PARTE 4
+Operador &&
+1.Crie uma constante chamada "currentHour" que recebe um número entre 4 e 24 de sua escolha, para representar as horas do dia.
+2.Crie uma variável chamada "message" que, inicialmente, é uma string vazia.
+3.Implemente condicionais para que:
+Se o horário for maior ou igual a 22, insira "Não deveríamos comer nada, é hora de dormir" na variável "message".
+Se o horário for maior ou igual a 18 e menor que 22, insira "Rango da noite, vamos jantar :D" na variável "message".
+Se o horário for maior ou igual a 14 e menor que 18, insira "Vamos fazer um bolo pro café da tarde?" na variável "message".
+Se o horário estiver entre 11 e 14, insira "Hora do almoço!!!" na variável "message".
+Se o horário estiver entre 4 e 11, insira "Hmmm, cheiro de café recém passado" na variável "message".
+4.Agora imprima a variável message fora das suas condições.
+*/
+
+/*1*/
+const currentHour = 16;
+/*2*/
+let message = "";
+/*3*/
+if (currentHour >= 22) {
+    message = "Não deveríamos comer nada, é hora de dormir"
+} else if (currentHour >= 18 && currentHour < 22) {
+    message = "Rango da noite, vamos jantar :D"
+} else if (currentHour >= 14 && currentHour < 18) {
+    message = "Vamos fazer um bolo pro café da tarde?"
+} else if (currentHour >= 11 && currentHour < 14) {
+    message = "Hora do almoço!!!"
+} else if (currentHour >= 4 && currentHour < 11) {
+    message = "Hmmm, cheiro de café recém passado"
+}
+/*4*/
+console.log(message);
+
+/*Operador ||
+1.Crie uma variável chamada "weekDay" que recebe a string "quarta-feira".
+2.Implemente condicionais para que:
+Se nossa variável "weekDay" for "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira" ou "sexta-feira", imprima "Oba, mais um dia de aprendizado na Trybe >:D".
+Se for algum dia de fim de semana, imprima "FINALMENTE, descando merecido UwU".
+*/
+
+/*1*/
+let weekDay = "quarta-feira";
+/*2*/
+if (weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "quarta-feira" || weekDay === "quinta-feira" || weekDay === "sexta-feira") {
+    console.log("Oba, mais um dia de aprendizado na Trybe >:D")
 } else {
-    console.log("Você foi reprovada(o)")
+    console.log("FINALMENTE descando merecido UwU")
 }
