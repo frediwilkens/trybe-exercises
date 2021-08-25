@@ -81,23 +81,23 @@ Se o horário estiver entre 4 e 11, insira "Hmmm, cheiro de café recém passado
 */
 
 /*1*/
-const currentHour = 16;
+//const currentHour = 16;
 /*2*/
-let message = "";
+//let message = "";
 /*3*/
-if (currentHour >= 22) {
-    message = "Não deveríamos comer nada, é hora de dormir"
-} else if (currentHour >= 18 && currentHour < 22) {
-    message = "Rango da noite, vamos jantar :D"
-} else if (currentHour >= 14 && currentHour < 18) {
-    message = "Vamos fazer um bolo pro café da tarde?"
-} else if (currentHour >= 11 && currentHour < 14) {
-    message = "Hora do almoço!!!"
-} else if (currentHour >= 4 && currentHour < 11) {
-    message = "Hmmm, cheiro de café recém passado"
-}
+//if (currentHour >= 22) {
+//    message = "Não deveríamos comer nada, é hora de dormir"
+//} else if (currentHour >= 18 && currentHour < 22) {
+//    message = "Rango da noite, vamos jantar :D"
+//} else if (currentHour >= 14 && currentHour < 18) {
+//    message = "Vamos fazer um bolo pro café da tarde?"
+//} else if (currentHour >= 11 && currentHour < 14) {
+//    message = "Hora do almoço!!!"
+//} else if (currentHour >= 4 && currentHour < 11) {
+//    message = "Hmmm, cheiro de café recém passado"
+//}
 /*4*/
-console.log(message);
+//console.log(message);
 
 /*Operador ||
 1.Crie uma variável chamada "weekDay" que recebe a string "quarta-feira".
@@ -107,10 +107,35 @@ Se for algum dia de fim de semana, imprima "FINALMENTE, descando merecido UwU".
 */
 
 /*1*/
-let weekDay = "quarta-feira";
+//let weekDay = "quarta-feira";
 /*2*/
-if (weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "quarta-feira" || weekDay === "quinta-feira" || weekDay === "sexta-feira") {
-    console.log("Oba, mais um dia de aprendizado na Trybe >:D")
-} else {
-    console.log("FINALMENTE descando merecido UwU")
+//if (weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "quarta-feira" || weekDay === "quinta-feira" || weekDay === "sexta-feira") {//
+//    console.log("Oba, mais um dia de aprendizado na Trybe >:D")
+//} else {//
+//    console.log("FINALMENTE descando merecido UwU")
+//}
+
+/*PARTE 5
+1.Crie uma variável para armazenar o estado da pessoa candidata no processo seletivo, que pode ser: 'aprovada' , 'lista' ou 'reprovada' ;
+2.Crie uma estrutura condicional com o switch/case que irá imprimir as mensagens do exercício anterior se o estado da pessoa candidata for 'aprovada' , 'lista' ou 'reprovada' . Como default , imprima a mensagem de 'não se aplica' .
+*/
+
+/*1*/
+let status = "aprovada";
+/*2*/
+switch(status) {
+    case "aprovada":
+        console.log("Parabéns, você foi aprovada(o)!");
+        break;
+    
+    case "lista":
+        console.log("Você está na nossa lista de espera");
+        break;
+    
+    case "reprovada":
+        console.log("Você está reprovada(o)");
+        break;
+    
+    default:
+        console.log("Não se aplica");
 }
