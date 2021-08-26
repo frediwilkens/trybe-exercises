@@ -77,3 +77,8 @@ for(index = 0; index < 25; index += 1){
     twentyFive[index] = index + 1
 }
 console.log(twentyFive);
+
+//9
+for (index = 0; index < twentyFive.length; index += 1){
+    console.log(twentyFive[index] / 2);
+}
