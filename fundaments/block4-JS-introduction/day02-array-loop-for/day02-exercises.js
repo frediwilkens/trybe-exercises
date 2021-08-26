@@ -43,3 +43,12 @@ if(mediaAritmetica > 20){
 } else {
     console.log("Valor menor ou igual a 20");
 }
+
+//5
+let numeroMaior = 0;
+for(let index = 0; index < numbers.length; index += 1){
+    if (numeroMaior < numbers[index]){
+        numeroMaior = numbers[index];
+    }
+}
+console.log(numeroMaior);
