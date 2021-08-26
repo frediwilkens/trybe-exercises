@@ -45,19 +45,28 @@ if(mediaAritmetica > 20){
 }
 
 //5
-let numeroMaior = 0;
+let maiorValor = numbers[0];
 for(let index = 0; index < numbers.length; index += 1){
-    if (numeroMaior < numbers[index]){
-        numeroMaior = numbers[index];
+    if (maiorValor < numbers[index]){
+        maiorValor = numbers[index];
     }
 }
-console.log(numeroMaior);
+console.log(maiorValor);
 
 //6
 let valorImpar = 0;
-for(index = 0; index < numbers.length; index +=1){
+for(index = 0; index < numbers.length; index += 1){
     if(numbers[index] % 2 !== 0) {
         valorImpar += 1;
     }
 }
 console.log(valorImpar);
+
+//7
+let menorValor = numbers[0];
+for(index = 0; index < numbers.length; index += 1){
+    if(menorValor > numbers[index]){
+        menorValor = numbers[index];
+    }
+}
+console.log(menorValor);
