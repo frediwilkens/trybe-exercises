@@ -118,7 +118,6 @@ for (index = 1; index < numbers.length; index += 1) {
 console.log(numbers);
 
 //2 OBS:criei um array similar para não interferir no exercício seguinte.
-
 let numbers2 = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 for (index = 1; index < numbers2.length; index += 1) {
     for (secondIndex = 0; secondIndex < index; secondIndex += 1) {
@@ -130,3 +129,14 @@ for (index = 1; index < numbers2.length; index += 1) {
     }
 }
 console.log(numbers2);
+
+//3 OBS: criei outro array pra não dar nenhum tipo de interferência.
+let numbers3 = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let arrayMultiplicado = []
+for (index = 0; index < numbers3.length; index += 1) {
+    if(index + 1 < numbers3.length) {
+        arrayMultiplicado.push(numbers3[index] * numbers3[index +1]);
+    } else {
+        arrayMultiplicado.push(numbers3[index] * 2);
+    }
+} console.log(arrayMultiplicado);
