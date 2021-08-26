@@ -52,3 +52,12 @@ for(let index = 0; index < numbers.length; index += 1){
     }
 }
 console.log(numeroMaior);
+
+//6
+let valorImpar = 0;
+for(index = 0; index < numbers.length; index +=1){
+    if(numbers[index] % 2 !== 0) {
+        valorImpar += 1;
+    }
+}
+console.log(valorImpar);
