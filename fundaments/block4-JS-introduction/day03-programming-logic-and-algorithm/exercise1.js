@@ -4,7 +4,7 @@ let n = 5;
 function asteriskSquare(n){
   let asterisk = "*";
   let lineOfAsterisk = "";
-  if(n >= 1){
+  if(n > 1){
     for(let line =1; line <= n; line += 1){
      lineOfAsterisk = lineOfAsterisk + asterisk;
     }
