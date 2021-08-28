@@ -5,9 +5,9 @@ function asteriskTriangle(n){
   let asterisk = "*";
   let line = "";
   if(n > 1){
-    for(let i = 0; i <= n; i += 1){
-      console.log(line)
+    for(let i = 0; i < n; i += 1){
       line = line + asterisk
+      console.log(line)
     }
   }
 }
