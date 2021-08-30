@@ -4,6 +4,10 @@ let info = {
   nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
 };
 
-//Imprima no console uma mensagem de boas-vindas para a personagem acima, incluindo seu nome.
+info.recorrente = "Sim";
 
-console.log("Bem-vinda, " + info.personagem);
+//  Faça um for/in que mostre todas as chaves do objeto.
+
+for (key in info) {
+  console.log(key);
+}
