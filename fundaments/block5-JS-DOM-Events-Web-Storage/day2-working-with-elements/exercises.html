@@ -80,11 +80,12 @@
       // 8
       let values = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
       let rightContent = document.querySelector('.right-content');
-
+      let unorderedList = document.createElement('ul');
+      rightContent.appendChild(unorderedList);
       for (let value of values){
         let listValue = document.createElement('li');
         listValue.innerText = value;
-        rightContent.appendChild(listValue);
+        unorderedList.appendChild(listValue);
       }
       // 9
       function addXelements(number, element, fatherClass){
@@ -93,6 +94,26 @@
         }
       }
       addXelements(3, 'h3', '.main-content');
+
+      // 10
+      document.querySelector('h1').className = 'title';
+      // 11
+      let tagsH3 = document.getElementsByTagName('h3');
+      for (tag of tagsH3) {
+        tag.className = 'description';
+      }
+      // 12
+      document.querySelector('main').removeChild(document.querySelector('.left-content'));
+      // 13
+      document.querySelector('.right-content').style.margin = 'auto';
+      // 14
+      document.querySelector('main').style.backgroundColor = 'green';
+      // 15
+      unorderedList.lastChild.remove();
+      unorderedList.lastChild.remove();
+      
+      
+      
     </script>
   </body>
 </html>
