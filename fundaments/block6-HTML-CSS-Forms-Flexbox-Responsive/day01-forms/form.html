@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Currículo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <form action="" method="get">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="form-row">
+          <label for="input-name">Nome</label>
+          <input type="text" name="name" id="input-name" maxlength="40" required>
+        </div>
+
+        <div class="form-row">
+          <label for="input-email">E-mail</label>
+          <input type="email" name="email" id="input-email" maxlength="50" required>
+        </div>
+
+        <div class="form-row">
+          <label for="input-cpf">CPF</label>
+          <input type="text" name="CPF" id="input-cpf" maxlength="11" required>
+        </div>
+
+        <div class="form-row">
+          <label for="input-endereco">Endereço</label>
+          <input type="text" name="endereco" id="input-endereco" maxlength="200" required>
+        </div>
+
+        <div class="form-row">
+          <label for="input-city">Cidade</label>
+          <input type="text" name="city" id="input-city" maxlength="28" required>
+        </div>
+
+        <div class="form-row">
+          <label for="input-estado">Selecione seu Estado</label>
+          <Select name="estado" id="input-estado" required></Select>
+        </div>
+
+        <div class="form-row">
+          <input type="radio" required name="residence" id="input-home">
+          <label for="input-home">Casa</label>
+          <input type="radio" name="residence" id="input-apartment">
+          <label for="input-apartment">Apartamento</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Último emprego</legend>
+        <div class="form-row">
+          <label for="input-resume">Resumo do Currículo</label>
+          <textarea name="resume" id="input-resume" cols="50" rows="8" maxlength="1000" required placeholder="Digite aqui o resumo do seu currículo"></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="input-cargo">Cargo</label>
+          <input type="text" name="cargo" id="input-cargo" required>
+        </div>
+
+        <div class="form-row">
+          <label for="input-cargo-description">Descrição do cargo</label>
+          <input type="text" name="cargo-description" id="input-cargo-description" maxlength="500" required>
+        </div>
+
+        <div class="form-row">
+          <label for="input-cargo-inicio">Data de início</label>
+          <input type="text" name="cargo-inicio" id="input-cargo-inicio" required>
+        </div>
+
+      </fieldset>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
