@@ -4,3 +4,67 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+.container {
+  margin: 5%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container header , .container aside , .container article , .container footer {
+  flex-basis: 100%;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header p {
+  text-align: center;
+  flex-basis: 100%;
+  font-size: large;
+}
+
+header nav {
+  flex-basis: 100%;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+
+.aside-one h2 {
+  text-align: center;
+}
+
+.aside-one ul {
+  list-style: none;
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+
+.aside-one li {
+  font-size: large;
+}
+
+.aside-two h2 {
+  text-align: center;
+}
+
+.aside-two ul {
+  list-style: none;
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+
+.main-content h1 {
+  text-align: center;
+}
+
+.main-content p {
+  font-size: x-large;
+  text-align: justify;
+}
