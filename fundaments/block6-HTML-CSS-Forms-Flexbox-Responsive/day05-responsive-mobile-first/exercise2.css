@@ -93,17 +93,22 @@ footer p {
     font-size: medium;
   }
 
-  .aside-one, .aside-two {
+  .container aside {
     flex-basis: 50%;
   }
 
   .aside-one h2, .aside-two h2 {
     margin-left: 50px;
     text-align: left;
+    font-size: medium;
   }
 
   .aside-one ul, .aside-two ul {
     margin-left: 50px;
+  }
+
+  .aside-one li, .aside-two li {
+    font-size: medium;
   }
 
   .aside-one, .aside-two, .main-content {
@@ -130,6 +135,23 @@ footer p {
   }
 
   footer {
+    position: fixed;
+    margin-top: 95%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    height: 75px;
+    align-content: space-between;
+  }
+
+  footer h3, footer p {
     font-size: small;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-basis: 100%;
   }
 }
