@@ -68,3 +68,68 @@ header nav ul {
   font-size: x-large;
   text-align: justify;
 }
+
+footer h3 {
+  font-size: xx-large;
+  text-align: end;
+}
+
+footer p {
+  text-align: justify;
+  margin-left: 35%;
+}
+
+@media screen and (min-width: 768px) {
+  header p {
+    font-size: large;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header li {
+    font-size: medium;
+  }
+
+  .aside-one, .aside-two {
+    flex-basis: 50%;
+  }
+
+  .aside-one h2, .aside-two h2 {
+    margin-left: 50px;
+    text-align: left;
+  }
+
+  .aside-one ul, .aside-two ul {
+    margin-left: 50px;
+  }
+
+  .aside-one, .aside-two, .main-content {
+    margin-top: 3%;
+  }
+
+  .main-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .main-content h1 {
+    font-size: large;
+    flex-basis: 100%;
+  }
+
+  .main-content p {
+    font-size: small;
+  }
+
+  .paragraph-container {
+    flex-basis: 45%;
+  }
+
+  footer {
+    font-size: small;
+  }
+}
