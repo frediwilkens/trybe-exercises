@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  margin: 5%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container header , .container aside , .container article , .container footer {
+  flex-basis: 100%;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header p {
+  text-align: center;
+  flex-basis: 100%;
+  font-size: large;
+}
+
+header nav {
+  flex-basis: 100%;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+
+.aside-one h2 {
+  text-align: center;
+}
+
+.aside-one ul {
+  list-style: none;
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+
+.aside-one li {
+  font-size: large;
+}
+
+.aside-two h2 {
+  text-align: center;
+}
+
+.aside-two ul {
+  list-style: none;
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+
+.main-content h1 {
+  text-align: center;
+}
+
+.main-content p {
+  font-size: x-large;
+  text-align: justify;
+}
+
+footer h3 {
+  font-size: xx-large;
+  text-align: end;
+}
+
+footer p {
+  text-align: justify;
+  margin-left: 35%;
+}
+
+@media screen and (min-width: 768px) {
+  header p {
+    font-size: large;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header li {
+    font-size: medium;
+  }
+
+  .container aside {
+    flex-basis: 50%;
+  }
+
+  .aside-one h2, .aside-two h2 {
+    margin-left: 50px;
+    text-align: left;
+    font-size: medium;
+  }
+
+  .aside-one ul, .aside-two ul {
+    margin-left: 50px;
+  }
+
+  .aside-one li, .aside-two li {
+    font-size: medium;
+  }
+
+  .aside-one, .aside-two, .main-content {
+    margin-top: 3%;
+  }
+
+  .main-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .main-content h1 {
+    font-size: large;
+    flex-basis: 100%;
+  }
+
+  .main-content p {
+    font-size: small;
+  }
+
+  .paragraph-container {
+    flex-basis: 45%;
+  }
+
+  footer {
+    position: fixed;
+    margin-top: 95%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    height: 75px;
+    align-content: space-between;
+  }
+
+  footer h3, footer p {
+    font-size: small;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-basis: 100%;
+  }
+}
