@@ -4,7 +4,7 @@ class Pokemon extends Component {
   render() {
     return (
       <div className="pokemon">
-        <img src={this.props.pokemon.image}/>
+        <img src={this.props.pokemon.image} alt="Front of pokemon"/>
         <p className="poke-name">{this.props.pokemon.name}</p>
         <p className="poke-type">{this.props.pokemon.type}</p>
         <p className="poke-weight">Average weight: {this.props.pokemon.averageWeight.value} kg</p>
